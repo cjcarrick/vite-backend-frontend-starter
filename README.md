@@ -1,16 +1,21 @@
 <h1 align="center">Vite Fullstack Starter</h1>
 
-<h4 align="center">All in one API backend and Vue frontend, using TypeScript, Vite, and Vue 3.</h4>
+<h4 align="center">All in one Express backend and Vue frontend, using TypeScript, Vite, and Vue 3.</h4>
 
 <h4 align="center">An incredibly easy way to get up and running with APIs.</h4>
 
-- 🔪 Cutting edge: All ESM, all the time
+- 🔪 Cutting Edge: All ESM, all the time
 - 🛟 Safety: TypeScript used for everything, which gives code completion everywhere
 - 🔥 Blazingly Fast: Vite used as build tool at every step of the process
-- ⏰ Ready to start: Preconfigured global SCSS, dotenv, Prettier, and Git
-- 🛠 Development friendly: HMR at the frontend and backend
-- 🧑‍💻 Unified codebase: `lib/` for things (like type defintions) that the frontend and backend need to
+- ⏰ Ready to Go: Preconfigured global SCSS, dotenv, Prettier, and Git
+- 🛠 Developer Friendly: HMR at the frontend and backend
+- 🧑‍💻 Unified Codebase: `lib/` for things (like type defintions) that the frontend and backend need to
   use
+  
+### Use Cases
+
+- Communicating with APIs that require authentication
+- Making anything else in Vue. Even if you never touch the backend, you'll have all the other features listed above.
   
 ## Clone
 
@@ -35,7 +40,7 @@ npm run start
 
 ## More information
 
-If you're using VSCode, consider using [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar). If you're using Vim, try [`CoC`](https://github.com/neoclide/coc.nvim) with [`yaegassy/coc-volar`](https://github.com/yaegassy/coc-volar) or [configuring the native LSP yourself](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md). If you're using IntelliJ, consider using vscode.
+If you're using VSCode, consider using [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar). If you're using Vim, try [`CoC`](https://github.com/neoclide/coc.nvim) with [`yaegassy/coc-volar`](https://github.com/yaegassy/coc-volar) or [configuring the native LSP yourself](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md). If you're using IntelliJ, consider using vscode like a normal person.
 
 ### Folder structure
 
