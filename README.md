@@ -1,80 +1,60 @@
-# Vue 3 + TypeScript + Vite + vite-plugin-mix
+<h1 align="center">Vite Fullstack Starter</h1>
 
-All in one API backend and Vue frontend, using TypeScript and Vue 3.
+<h4 align="center">All in one API backend and Vue frontend, using TypeScript, Vite, and Vue 3.</h4>
 
-- All ESM
-- Vite for fast compilation
-- Preconfigured global SCSS
-- Load environment variables from `.env` at project root
-- HMR at the frontend and backend
-- `lib/` for things (like type defintions) that the frontend and backend need to
+<h4 align="center">An incredibly easy way to get up and running with APIs.</h4>
+
+- 🔪 Cutting edge: All ESM, all the time
+- 🛟 Safety: TypeScript used for everything, which gives code completion everywhere
+- 🔥 Blazingly Fast: Vite used as build tool at every step of the process
+- ⏰ Ready to start: Preconfigured global SCSS, dotenv, Prettier, and Git
+- 🛠 Development friendly: HMR at the frontend and backend
+- 🧑‍💻 Unified codebase: `lib/` for things (like type defintions) that the frontend and backend need to
   use
-
-## Folder structure
-
-```sh
-|- backend/   # Our backend API
-|- src/       # Our frontend Vue app
-|- lib/       # Shared libraries for backend and frontend
-|- build/     # Generated frontend code
-\- server/    # Generated backend code
-```
-
-## Development
-
-Make sure you have NodeJS installed, then run
+  
+## Clone
 
 ```sh
-npm install
+git clone https://github.com/cjcarrick/vite-fullstack-starter
 ```
 
-at the root of this project.
-
-Then run
+## Develop
 
 ```sh
 npm run dev
 ```
 
-and open the page in your browser.
-
-## Building and Running for Production
-
-```sh
-npm install
-```
-
-...if you haven't already.
+## Deploy
 
 ```sh
 npm run build
 ```
-
-...replaces `dev` from before, and creates files that can be run without a build
-step later.
-
 ```sh
 npm run start
 ```
 
-...runs the built files.
+## More information
 
-## Recommended IDE Setup
+If you're using VSCode, consider using [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar). If you're using Vim, try [`CoC`](https://github.com/neoclide/coc.nvim) with [`yaegassy/coc-volar`](https://github.com/yaegassy/coc-volar) or [configuring the native LSP yourself](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md). If you're using IntelliJ, consider using vscode.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+### Folder structure
 
-## Type Support For `.vue` Imports in TS
+```
+project root
+|- backend/   # Our backend server that communicates with APIs
+|- src/       # Our frontend Vue app, which communicates with that server
+|- lib/       # Shared libraries for backend and frontend
+|- build/     # Generated frontend code
+|- server/    # Generated backend code
+```
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
-
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
-
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
-
-## [vite-plugin-mix](https://github.com/egoist/vite-plugin-mix)
+### [`vite-plugin-mix`](https://github.com/egoist/vite-plugin-mix) does most of the heavy lifting.
 
 This allows for building a backend API at the same time as building the
-frontend.
+frontend, having HMR on both of them, and building it all very fast.
 
-Edit the files in `backend/`, and they will be built into the final project.
+### Disclaimer
+
+This repo is mostly just for me, because I found myself writing a lot of the same boilerplate a lot of the time. It includes things that I personally find good. It's probably not perfect, and if you find a problem, let me know in the issues tab.
+
+Additionaly, feel free to fork this and modify it however you want.
