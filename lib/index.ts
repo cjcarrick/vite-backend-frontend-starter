@@ -1,7 +1,6 @@
-export type GreetingRequest = {
-  name: string
-}
-
-export type GreetingResponse = {
-  greetings: string
+export type Todo = {
+  userId: number
+  id: number
+  title: string
+  completed: boolean
 }

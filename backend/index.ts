@@ -1,6 +1,6 @@
 import express from 'express'
 import { type Handler } from 'vite-plugin-mix'
-import { GreetingResponse } from '../lib'
+import { Todo } from '../lib'
 import { env } from './env'
 
 // Notice how SECRET, from `.env` is loaded like this.
@@ -8,18 +8,21 @@ console.log(`Secret: ${env.SECRET}, hostname: ${env.HOSTNAME}`)
 
 const app = express()
 
-// Setup API routes. `/api/` in pathnames is not required, but makes it clear that we're
-// getting data from the api
-app.get('/api/hello', (req, res) => {
-  const { name } = req.query
+app.get('/api/todos', async (req, res) => {
+  const { id } = req.query
 
-  // By specifying the type of `Response`, we make sure all required fields
-  // are filled.
-  const response: GreetingResponse = {
-    greetings: name?.toString() || 'Unknown name'
+  if (id) {
+    const ftch = await fetch(
+      ' https://jsonplaceholder.typicode.com/todos/' + id
+    )
+
+    const json = (await ftch.json()) as Todo
+    return res.json([json])
+  } else {
+    const ftch = await fetch(' https://jsonplaceholder.typicode.com/todos')
+    const json = (await ftch.json()) as Todo[]
+    return res.json(json)
   }
-
-  res.json(response)
 })
 
 // Only serve index.html in production.

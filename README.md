@@ -11,12 +11,13 @@
 - 🛠 Developer Friendly: HMR at the frontend and backend
 - 🧑‍💻 Unified Codebase: `lib/` for things (like type defintions) that the frontend and backend need to
   use
-  
+- 😊 Multi-Page Support: Prconfigured Vue Router
+
 ### Use Cases
 
 - Communicating with APIs that require authentication
 - Making anything else in Vue. Even if you never touch the backend, you'll have all the other features listed above.
-  
+
 ## Clone
 
 ```sh
@@ -34,6 +35,7 @@ npm run dev
 ```sh
 npm run build
 ```
+
 ```sh
 npm run start
 ```
