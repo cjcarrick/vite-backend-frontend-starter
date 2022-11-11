@@ -4,7 +4,7 @@ import { GreetingResponse } from '../lib'
 import { env } from './env'
 
 // Notice how SECRET, from `.env` is loaded like this.
-console.log(env.SECRET)
+console.log(`Secret: ${env.SECRET}, hostname: ${env.HOSTNAME}`)
 
 const app = express()
 
