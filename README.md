@@ -7,7 +7,7 @@
 - 🔪 Cutting Edge: All ESM, all the time
 - 🛟 Safety: TypeScript used for everything, which gives code completion everywhere
 - 🔥 Blazingly Fast: Vite used as build tool at every step of the process
-- ⏰ Ready to Go: Preconfigured global SCSS, dotenv, Prettier, and Git
+- ⏰ Ready to Go: Preconfigured global SCSS, dotenv, Prettier, ESLint, and Git
 - 🛠 Developer Friendly: HMR at the frontend and backend
 - 🧑‍💻 Unified Codebase: `lib/` for things (like type defintions) that the frontend and backend need to
   use
