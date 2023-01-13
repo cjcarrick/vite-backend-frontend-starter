@@ -5,23 +5,17 @@ import HelloWorld from '../components/HelloWorld.vue'
 <template>
   <div>
     <a href="https://vitejs.dev" target="_blank">
-      <img src="../assets/vite.svg" class="logo" alt="Vite logo" />
+      <img src="../assets/vite.svg" :class="$style.logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
-      <img src="../assets/vue.svg" class="logo vue" alt="Vue logo" />
+      <img src="../assets/vue.svg" :class="[$style.logo, $style.vue]" alt="Vue logo" />
     </a>
   </div>
 
   <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style lang="scss">
-// an unscoped scss is required in App.vue for main.scss to properly load.
-// Components don't need this.
-// and to be honest i have no idea why
-</style>
-
-<style scoped lang="scss">
+<style module lang="scss">
 .logo {
   height: 6em;
   padding: 1.5em;

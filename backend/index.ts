@@ -12,14 +12,11 @@ app.get('/api/todos', async (req, res) => {
   const { id } = req.query
 
   if (id) {
-    const ftch = await fetch(
-      ' https://jsonplaceholder.typicode.com/todos/' + id
-    )
-
+    const ftch = await fetch('https://jsonplaceholder.typicode.com/todos/' + id)
     const json = (await ftch.json()) as Todo
     return res.json([json])
   } else {
-    const ftch = await fetch(' https://jsonplaceholder.typicode.com/todos')
+    const ftch = await fetch('https://jsonplaceholder.typicode.com/todos')
     const json = (await ftch.json()) as Todo[]
     return res.json(json)
   }
